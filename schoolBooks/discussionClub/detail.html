@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="ko">
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<title>독서토론</title>
+<link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+<div id="wrapAll">
+	<!-- [header] -->
+	<header class="header_discuss">
+		<div class="inner">
+			<h1 class="logo"><a href="#none"><img src="../images/logo.png" alt="독서토론" /></a></h1>
+		</div>
+		<div class="my_info">
+			<button type="button" class="my_name" id="myMenuBtn">홍길동</button>
+			<ul class="my_menu" id="myMenu">
+				<li><a href="#none" class="link">내서재</a></li>
+				<li><a href="#none" class="link">내정보 수정</a></li>
+				<li><a href="#none" class="link">로그아웃</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- //[header] -->
+	<!-- [quick menu] -->
+	<aside class="quick_menu" id="quickMenu">
+		<ul class="list_quick">
+			<li><a href="#none">Q&A</a></li>
+			<li><a href="#none">FAQ</a></li>
+			<li><a href="#none" class="talks">School Talks</a></li>
+		</ul>
+		<button type="button" class="quick_position top" id="quickTop">top</button>
+		<button type="button" class="quick_position bottom" id="quickBottom">bottom</button>
+	</aside>
+	<!-- //[quick menu] -->
+	<section class="container">
+		<div class="top_detail">
+			<div class="bg_visual">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="480" id="blurred_wd1v02jas" class="bg-blur" viewBox="0 0 1920 480" preserveAspectRatio="none">
+					<filter id="blur_wd1v02jas">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="40"></feGaussianBlur>
+					</filter>
+					<image x="0" y="0" width="100%" height="480" externalResourcesRequired="true" xlink:href="../images/thumb_img03.jpg" style="filter:url(#blur_wd1v02jas)" preserveAspectRatio="none" />
+				</svg>
+				<span class="dim"></span>
+			</div>
+			<div class="info_detail">
+				<div class="inner">
+					<span class="thumb"><img src="../images/thumb_img03.jpg" alt="독서토론 모임" /></span>
+					<dl class="title_info">
+						<dt><h2 class="title">독서토론 모임</h2></dt>
+						<dd class="txt">혼자가 아닌 '같이' 읽는 독서를 통해 마음을 나눈다! 독서를 혼자가 아닌 여럿이 함께 읽음으로써 얻을 수 있는 '가치'를 이야기한다.</dd>
+					</dl>
+					<dl class="info">
+						<dt>개설일</dt>
+						<dd>2019.03.15</dd>
+					</dl>
+					<dl class="info">
+						<dt>리 더</dt>
+						<dd>홍길동</dd>
+					</dl>
+					<div class="btn_area">
+						<button type="button" class="btn2 request" onclick="javascript:openPopup('joinQuestionPopup');">가입신청</button>
+						<!-- <button type="button" class="btn2 cancel">신청취소</button> --><!-- 필요시 주석 풀어서 사용 -->
+						<!-- <button type="button" class="btn2 close">가입탈퇴</button> --><!-- 필요시 주석 풀어서 사용 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sub_contents detail">
+			<!-- 탭 Start -->
+			<ul class="tab_comm2">
+				<li class="on"><a href="#none" class="intro">소개</a></li>
+				<li><a href="#none" class="activity">활동</a></li>
+				<li><a href="#none" class="board">게시판</a></li>
+				<li><a href="#none" class="schedule">일정</a></li>
+				<li><a href="#none" class="member">회원목록</a></li>
+				<li><a href="#none" class="setting">설정</a></li>
+			</ul>
+			<!-- //탭 End -->
+
+
+			<div class="tab_contents">
+				<article class="tab_cont intro" style="display:block;">
+					<h3 class="screen_out">소개</h3>
+					<!-- 소개 상세내용 Start -->
+					<div class="item_intro">
+						<strong class="tit_intro accept">신청안내</strong>
+						<ul class="list_intro">
+							<li><em class="tit">대상 :</em>미추홀도서관 회원 초등학생</li>
+							<li><em class="tit">접수방법 :</em>홈페이지를 통한 온라인 접수</li>
+							<li><em class="tit">신청료 :</em>무료(단, 강좌에 필요한 교재 및 재료비는 본인부담)</li>
+							<li><span class="point">수강신청 취소는 개강 전까지만 가능합니다.</span></li>
+						</ul>
+					</div>
+					<div class="item_intro">
+						<strong class="tit_intro caution">유의사항</strong>
+						<ul class="list_intro">
+							<li><span class="point">법정공휴일 및 휴관일에는 수업이 없습니다.</span></li>
+							<li>도서관 사정에 의해 프로그램이 변경될 수 있습니다.</li>
+							<li>온라인 접수인원은 각 강좌별 모집정원의 50% 이상입니다.</li>
+						</ul>
+					</div>
+					<div class="item_intro">
+						<strong class="tit_intro inquiry">문의</strong>
+						<ul class="list_intro">
+							<li>(032)440-6668</li>
+						</ul>
+					</div>
+					<!-- //소개 상세내용 End -->
+					<div class="item_intro recent">
+						<strong class="tit_intro accept">최근 활동</strong>
+						<a href="#none" class="link_more">더보기</a>
+						<!-- 최근활동 리스트 Start -->
+						<ul class="list_activity">
+							<li>
+								<a href="#none" class="link">
+									<span class="thumb"><img src="../images/activity_img01.jpg" alt="혼자 살아간다는 것" /></span>
+									<span class="tit"><strong>혼자 살아간다는 것</strong></span>
+									<span class="term">2019.05.19</span>
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="link">
+									<span class="thumb"><img src="../images/activity_img01.jpg" alt="분석하고 토론하기" /></span>
+									<span class="tit"><strong>분석하고 토론하기</strong></span>
+									<span class="term">2019.05.19</span>
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="link">
+									<span class="thumb"><img src="../images/activity_img01.jpg" alt="동물의 사고 능력에 대하여" /></span>
+									<span class="tit"><strong>동물의 사고 능력에 대하여</strong></span>
+									<span class="term">2019.05.19</span>
+								</a>
+							</li>
+						</ul>
+						<!-- //최근활동 리스트 End -->
+					</div>
+				</article>
+
+
+				<article class="tab_cont activity">
+					<h3 class="screen_out">활동</h3>
+					<!-- 활동 섬네일 리스트 Start -->
+					<ul class="list_activity">
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="전국 대학생 토론대회" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+							<button type="button" class="btn_del" onclick="javascript:openPopup('confirmPopup');">삭제버튼</button>
+						</li>
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="2013 청년상상 불가능의 세계를 켜다" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+							<button type="button" class="btn_del" onclick="javascript:openPopup('confirmPopup');">삭제버튼</button>
+						</li>
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="전국 대학생 토론대회" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="전국 대학생 토론대회" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="2013 청년상상 불가능의 세계를 켜다" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="전국 대학생 토론대회" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="전국 대학생 토론대회" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="2013 청년상상 불가능의 세계를 켜다" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="link">
+								<span class="thumb"><img src="../images/activity_img01.jpg" alt="전국 대학생 토론대회" /></span>
+								<span class="tit"><strong>12차시 : 토론 실습</strong></span>
+								<span class="term">2019.05.19</span>
+							</a>
+						</li>
+					</ul>
+					<!-- //활동 섬네일 리스트 End -->
+					<div class="btn_area ta_r">
+						<a href="#none" class="link_wrt">등록하기</a>
+					</div>
+					<!-- 페이징 -->
+					<div class="paging">
+						<a href="#none" class="first">맨처음</a>
+						<a href="#none" class="prev">이전</a>
+						<a href="#none" class="page on">1</a>
+						<a href="#none" class="page">2</a>
+						<a href="#none" class="page">3</a>
+						<a href="#none" class="page">4</a>
+						<a href="#none" class="page">5</a>
+						<a href="#none" class="next">다음</a>
+						<a href="#none" class="last">마지막</a>
+					</div>
+					<!-- //페이징 -->
+				</article>
+
+
+				<article class="tab_cont board">
+					<h3 class="screen_out">게시판</h3>
+					<!-- 게시판 리스트 테이블 Start -->
+					<table class="tbl_comm list">
+						<colgroup>
+							<col style="width:110px" />
+							<col style="width:*" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+							<col style="width:80px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">
+									<select name="" id="" class="select_comm">
+										<option value="">전체</option>
+										<option value="">공지사항</option>
+										<option value="">가입인사</option>
+										<option value="">활동</option>
+										<option value="">기타</option>
+									</select>
+								</th>
+								<th scope="col">제목</th>
+								<th scope="col">작성자</th>
+								<th scope="col">작성일</th>
+								<th scope="col">조회</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src="../images/icon_hold.png" alt="고정" /></td>
+								<td><a href="#none" class="link_board">[공지사항] 고정된 공지사항 입니다.</a></td>
+								<td>관리자</td>
+								<td>2018.06.04</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td><img src="../images/icon_hold.png" alt="고정" /></td>
+								<td><a href="#none" class="link_board">[공지사항] 고정된 공지사항2 입니다.</a></td>
+								<td>관리자</td>
+								<td>2018.06.04</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td><a href="#none" class="link_board">[기타] 게시판 작성해봤습니다.</a></td>
+								<td>관리자</td>
+								<td>2018.06.04</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td><a href="#none" class="link_board">[기타] 이곳이 게시판인가요?</a></td>
+								<td>관리자</td>
+								<td>2018.06.04</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td><a href="#none" class="link_board">[가입인사] 안녕하세요. 처음인사드립니다.</a></td>
+								<td>관리자</td>
+								<td>2018.06.04</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td><a href="#none" class="link_board">[활동] 오늘활동 너무 좋았습니다.</a></td>
+								<td>관리자</td>
+								<td>2018.06.04</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><a href="#none" class="link_board">[기타] 좋은날씨 상쾌한 바람이 부네요.</a></td>
+								<td>관리자</td>
+								<td>2018.06.04</td>
+								<td>123</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- //게시판 리스트 테이블 End -->
+					<div class="btn_area ta_r">
+						<a href="#none" class="link_wrt">작성하기</a>
+					</div>
+					<!-- 페이징 -->
+					<div class="paging">
+						<a href="#none" class="first">맨처음</a>
+						<a href="#none" class="prev">이전</a>
+						<a href="#none" class="page on">1</a>
+						<a href="#none" class="page">2</a>
+						<a href="#none" class="page">3</a>
+						<a href="#none" class="page">4</a>
+						<a href="#none" class="page">5</a>
+						<a href="#none" class="next">다음</a>
+						<a href="#none" class="last">마지막</a>
+					</div>
+					<!-- //페이징 -->
+					<!-- 게시판 검색 -->
+					<div class="box_search2">
+						<select name="" id="" class="select_comm">
+							<option value="">제목</option>
+							<option value="">내용</option>
+							<option value="">작성자</option>
+						</select>
+						<label for="keyword"><input type="text" id="keyword" class="keyword"></label>
+						<button type="button" class="btn_search">검색</button>	
+					</div>
+					<!-- //게시판 검색 -->
+				</article>
+
+
+				<article class="tab_cont schedule">
+					<h3 class="screen_out">일정</h3>
+					<!-- 일정 영역 Start -->
+					<div class="wrap_schedule">
+						
+						<!-- 달력 영역 Start -->
+						<div class="top_calendar">
+							<div class="control">
+								<!-- 이전 월을 보기위하여 해당 년도와 월-1을한 값으로 현재 페이지로 링크 연결. -->
+								<a href="/readingdiscussion/calender.do?year=2019&amp;month=4&amp;recKey=12345&amp;check=1" class="month prev" title="이전달">◀</a>
+								<!-- 이전 월을 보기위하여 해당 년도와 월+1을한 값으로 현재 페이지로 링크 연결. -->
+								<strong class="year_month"> 2019년 6월 </strong>
+								<a href="/readingdiscussion/calender.do?year=2019&amp;month=6&amp;recKey=12345&amp;check=1" class="month next" title="다음달">▶</a>
+							</div>
+							<button type="button" class="btn_today">오늘</button>
+						</div>
+						<table class="tbl_calendar">
+							<colgroup>
+								<col style="width:14.28%" />
+								<col style="width:14.28%" />
+								<col style="width:14.28%" />
+								<col style="width:14.28%" />
+								<col style="width:14.28%" />
+								<col style="width:14.28%" />
+								<col style="width:14.28%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="sunday">일</th>
+									<th scope="col">월</th>
+									<th scope="col">화</th>
+									<th scope="col">수</th>
+									<th scope="col">목</th>
+									<th scope="col">금</th>
+									<th scope="col">토</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><span class="day">1</span></td>
+								</tr>
+								<tr>
+									<td><span class="day sunday">2</span></td>
+									<td><span class="day">3</span></td>
+									<td><span class="day">4</span></td>
+									<td><span class="day">5</span></td>
+									<td><span class="day">6</span></td>
+									<td><span class="day">7</span></td>
+									<td><span class="day">8</span></td>
+								</tr>
+								<tr>
+									<td><span class="day sunday">9</span></td>
+									<td><span class="day">10</span></td>
+									<td><span class="day">11</span></td>
+									<td>
+										<span class="day">12</span>
+										<div class="schedule">
+											<a href="#none" class="tit_schedule">10차시:토론실습</a>
+											<ul class="info_schedule">
+												<li>장소 : 미추홀도서관 대강당</li>
+												<li>시간 : 15시 30분</li>
+											</ul>
+										</div>
+									</td>
+									<td><span class="day">13</span></td>
+									<td><span class="day">14</span></td>
+									<td><span class="day">15</span></td>
+								</tr>
+								<tr>
+									<td><span class="day sunday">16</span></td>
+									<td><span class="day">17</span></td>
+									<td><span class="day">18</span></td>
+									<td><span class="day">19</span></td>
+									<td><span class="day">20</span></td>
+									<td class="today"><span class="day">21</span></td>
+									<td><span class="day">22</span></td>
+								</tr>
+								<tr>
+									<td><span class="day sunday">23</span></td>
+									<td>
+										<span class="day">24</span>
+										<div class="schedule">
+											<a href="#none" class="tit_schedule">11차시:토론실습</a>
+											<ul class="info_schedule">
+												<li>장소 : 미추홀도서관 대강당</li>
+												<li>시간 : 10시 30분</li>
+											</ul>
+										</div>
+										<div class="schedule">
+											<a href="#none" class="tit_schedule">12차시:토론실습2</a>
+											<ul class="info_schedule">
+												<li>장소 : 미추홀도서관 대강당</li>
+												<li>시간 : 17시 30분</li>
+											</ul>
+										</div>
+									</td>
+									<td><span class="day">25</span></td>
+									<td><span class="day">26</span></td>
+									<td><span class="day">27</span></td>
+									<td><span class="day">28</span></td>
+									<td><span class="day">29</span></td>
+								</tr>
+								<tr>
+									<td><span class="day sunday">30</span></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- 달력 영역 End -->
+
+					</div>
+					<!-- //일정 영역 End -->
+				</article>
+
+
+				<article class="tab_cont member">
+					<h3 class="screen_out">회원목록</h3>
+					<div class="top_member">
+						<label for="memberType" class="txt">선택한 회원</label>
+						<select name="" id="memberType" class="select_comm">
+							<option value="">강사</option>
+							<option value="">승인완료</option>
+							<option value="">승인대기</option>
+						</select>
+						<button type="button" class="btn update">변경</button>
+						<button type="button" class="btn secede" onclick="javascript:openPopup('secedePopup');">강제탈퇴</button>
+					</div>
+					<!-- 회원목록 목록 테이블 Start -->
+					<table class="tbl_comm list">
+						<colgroup>
+							<col style="width:5%" />
+							<col style="width:5%" />
+							<col style="width:15%" />
+							<col style="width:15%" />
+							<col style="width:15%" />
+							<col style="width:15%" />
+							<col style="width:15%" />
+							<col style="width:10%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">
+									<label for="chkAll" class="chk_comm">
+										<input type="checkbox" name="" id="chkAll" />
+										<span class="chk_box"></span>
+									</label>
+								</th>
+								<th scope="col">번호 <input type="button" class="btn_order" /></th>
+								<th scope="col">구분 <input type="button" class="btn_order" /></th>
+								<th scope="col">이름 <input type="button" class="btn_order" /></th>
+								<th scope="col">ID <input type="button" class="btn_order" /></th>
+								<th scope="col">회원신청일 <input type="button" class="btn_order" /></th>
+								<th scope="col">회원변경일 <input type="button" class="btn_order" /></th>
+								<th scope="col">가입답변</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<label for="chk01" class="chk_comm">
+										<input type="checkbox" name="" id="chk01" class="chk_item" />
+										<span class="chk_box"></span>
+									</label>
+								</td>
+								<td>12</td>
+								<td>강사</td>
+								<td>홍길동</td>
+								<td>seung****</td>
+								<td>2018.06.04</td>
+								<td>2018.06.09</td>
+								<td><button type="button" class="btn view" onclick="">보기</button></td>
+							</tr>
+							<tr>
+								<td>
+									<label for="chk02" class="chk_comm">
+										<input type="checkbox" name="" id="chk02" class="chk_item" />
+										<span class="chk_box"></span>
+									</label>
+								</td>
+								<td>12</td>
+								<td>강사</td>
+								<td>홍길동</td>
+								<td>seung****</td>
+								<td>2018.06.04</td>
+								<td>2018.06.09</td>
+								<td><button type="button" class="btn view" onclick="">보기</button></td>
+							</tr>
+							<tr>
+								<td>
+									<label for="chk03" class="chk_comm">
+										<input type="checkbox" name="" id="chk03" class="chk_item" />
+										<span class="chk_box"></span>
+									</label>
+								</td>
+								<td>12</td>
+								<td>강사</td>
+								<td>홍길동</td>
+								<td>seung****</td>
+								<td>2018.06.04</td>
+								<td>2018.06.09</td>
+								<td><button type="button" class="btn view">보기</button></td>
+							</tr>
+							<tr>
+								<td>
+									<label for="chk04" class="chk_comm">
+										<input type="checkbox" name="" id="chk04" class="chk_item" />
+										<span class="chk_box"></span>
+									</label>
+								</td>
+								<td>12</td>
+								<td>강사</td>
+								<td>홍길동</td>
+								<td>seung****</td>
+								<td>2018.06.04</td>
+								<td>2018.06.09</td>
+								<td><button type="button" class="btn view" onclick="">보기</button></td>
+							</tr>
+							<tr>
+								<td>
+									<label for="chk05" class="chk_comm">
+										<input type="checkbox" name="" id="chk05" class="chk_item" />
+										<span class="chk_box"></span>
+									</label>
+								</td>
+								<td>12</td>
+								<td>강사</td>
+								<td>홍길동</td>
+								<td>seung****</td>
+								<td>2018.06.04</td>
+								<td>2018.06.09</td>
+								<td><button type="button" class="btn view" onclick="">보기</button></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- //회원목록 테이블 End -->
+					<div class="paging">
+						<a href="#none" class="first">맨처음</a>
+						<a href="#none" class="prev">이전</a>
+						<a href="#none" class="page on">1</a>
+						<a href="#none" class="page">2</a>
+						<a href="#none" class="page">3</a>
+						<a href="#none" class="page">4</a>
+						<a href="#none" class="page">5</a>
+						<a href="#none" class="next">다음</a>
+						<a href="#none" class="last">마지막</a>
+					</div>
+				</article>
+
+
+				<article class="tab_cont setting">
+					<h3 class="screen_out">설정</h3>
+					<!-- 설정 form : Start -->
+					<form action="">
+						<fieldset>
+							<legend class="screen_out">토론동아리 생성 form</legend>
+							<table class="tbl_comm">
+								<colgroup>
+									<col style="width:180px">
+									<col style="width:*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">동아리명 <em class="essential">*</em></th>
+										<td>
+											<input type="text" name="" class="inp_overlap" />
+											<button type="button" class="btn2 overlap">중복확인</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">동아리 멤버 수 제한 <em class="essential">*</em></th>
+										<td>
+											<div class="group_chk">
+												<input type="text" name="" />
+												<label for="limit" class="chk_comm">
+													<input type="checkbox" name="" id="limit">
+													<span class="chk_box"></span>
+													<span class="txt">제한없음</span>
+												</label>
+												<p class="txt_guide">설정인원 도달 시 더 이상 가입신청을 받지 않습니다.</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">소개글 작성</th>
+										<td>
+											<div class="box_editer">
+												에디터 영역
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">한줄소개</th>
+										<td>
+											<textarea name="" id=""></textarea>
+											<p class="txt_guide">동아리의 간략한 소개로 전체 동아리 목록에서 보여지는 문구 입니다.</p>
+										</td>
+									</tr>
+									<tr class="tr_question">
+										<th scope="row">질문 1</th>
+										<td>
+											<input type="text" name="" class="inp_question" value="동아리에 가입하게 된 배경은 무엇입니까?" />
+											<button type="button" class="btn update">수정</button>
+											<button type="button" class="btn2 delete">삭제</button>
+										</td>
+									</tr>
+									<tr class="tr_question">
+										<th scope="row">질문 2</th>
+										<td>
+											<input type="text" name="" class="inp_question" />
+											<button type="button" class="btn question">질문등록</button>
+										</td>
+									</tr>
+									<tr class="tr_question">
+										<th scope="row">질문 3</th>
+										<td>
+											<input type="text" name="" class="inp_question" />
+											<button type="button" class="btn question">질문등록</button>
+										</td>
+									</tr>
+									<tr class="tr_question">
+										<th scope="row">질문 4</th>
+										<td>
+											<input type="text" name="" class="inp_question" />
+											<button type="button" class="btn question">질문등록</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">질문 5</th>
+										<td>
+											<input type="text" name="" class="inp_question" />
+											<button type="button" class="btn question">질문등록</button>
+											<p class="txt_guide">가입 질문은 5개까지 가능하며, 답변 내용은 회원목록에서 확인 할 수 있습니다.</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">동아리 비공개</th>
+										<td>
+											<div class="group_chk">
+												<label for="closed" class="chk_comm ml0">
+													<input type="checkbox" name="" id="closed">
+													<span class="chk_box"></span>
+													<span class="txt">설정</span>
+												</label>
+												<p class="txt_guide">설정 시 소개, 활동목록  외 메뉴는 동아리 멤버만 조회가능합니다.</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">썸네일</th>
+										<td>
+											<div class="box_preview">
+												<span id="previewImg" class="img_preview"><img src="../images/thumb_img01.jpg" alt="섬네일 미리보기" /></span>
+												<label for="previewFile" class="btn_preview">이미지찾기</label>
+												<input type="file" id="previewFile" class="file_preview" />
+												<button type="button" id="previewDel" class="del_preview">삭제</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="btn_area ta_r">
+								<button type="button" class="btn submit">저장</button>
+								<button type="button" class="btn cancel">삭제</button>
+							</div>
+						</fieldset>
+					</form>
+					<!-- //설정 form : End -->
+				</article>
+
+
+			</div>
+		</div>
+	</section>
+	<!-- [footer] -->
+	<footer class="footer_discuss">
+		<div class="inner">
+			<span class="logo"><img src="../images/logo_footer.png" alt="School Books 하단 로고" /></span>
+			<strong class="company">주식회사 이씨오</strong>
+			<address class="addr">
+				대표자: 이사영 / 사업자등록번호: 211-86-14883<br>
+				서울특별시 성동구 광나루6길 우림e-Biz센터 3층(성수2가 3동 280-21)<br>
+				Tel. 02-2024-9900 / Fax. 02-2024-9800 / E-mail. sales@eco.co.kr
+			</address>
+			<p class="copy">COPYRIGHT &copy; 2019 ECO, Inc. ALL RIGHTS RESERVED.</p>
+			<ul class="ft_menu">
+				<li><a href="#none">이용약관</a></li>
+				<li><a href="#none">개인정보취급방침</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- //[footer] -->
+		
+	<!-- [팝업]동아리 가입질문 Start -->
+	<div class="pop_comm pop_question" id="joinQuestionPopup">
+		<div class="wrap_pop">
+			<div class="head_pop">
+				<strong class="title">동아리 가입질문</strong>
+				<button type="button" class="btn_close" onclick="javascript:closePopup('joinQuestionPopup');">팝업닫기</button>
+			</div>
+			<div class="body_pop">
+				<div class="box_question">
+					<dl class="question">
+						<dt><span class="tit">질문 1</span><strong class="ask">동아리 가입 배경은 무엇인가요?</strong></dt>
+						<dd><textarea name="" id=""></textarea></dd>
+					</dl>
+					<dl class="question">
+						<dt><span class="tit">질문 2</span><strong class="ask">이전에 가입했던 동아리명은 무엇인가요?</strong></dt>
+						<dd><textarea name="" id=""></textarea></dd>
+					</dl>
+				</div>
+				<div class="btn_area ta_c">
+					<a href="#none" class="btn confirm">제출</a>
+					<a href="javascript:closePopup('joinQuestionPopup');" class="btn cancel">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //[팝업]동아리 가입질문 End -->
+
+	<!-- [팝업] 강제탈퇴사유 Start -->
+	<div class="pop_comm pop_secede" id="secedePopup">
+		<div class="wrap_pop">
+			<div class="head_pop">
+				<strong class="title">강제탈퇴</strong>
+				<button type="button" class="btn_close" onclick="javascript:closePopup('secedePopup');">팝업닫기</button>
+			</div>
+			<div class="body_pop">
+				<div class="box_secede">
+					<strong class="tit">강제탈퇴 사유</strong>
+					<textarea name="" id=""></textarea>
+				</div>
+				<div class="btn_area ta_c">
+					<a href="#none" class="btn submit">등록</a>
+					<a href="javascript:closePopup('secedePopup');" class="btn cancel">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //[팝업]강제탈퇴사유 End -->
+
+	<!-- [팝업] 삭제하시겠습니까 Start -->
+	<div class="pop_comm" id="confirmPopup">
+		<div class="wrap_confirm">
+			<strong class="question">삭제하시겠습니까?</strong>
+			<div class="btn_area">
+				<a href="#none" class="btn confirm">확인</a>
+				<a href="javascript:closePopup('confirmPopup');" class="btn cancel">취소</a>
+			</div>
+		</div>
+	</div>
+	<!-- //[팝업]삭제하시겠습니까 End -->
+</div>
+</body>
+</html>

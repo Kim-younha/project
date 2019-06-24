@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<title>독서토론</title>
+<link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+<div id="wrapAll">
+	<!-- [header] -->
+	<header class="header_discuss">
+		<div class="inner">
+			<h1 class="logo"><a href="#none"><img src="../images/logo.png" alt="독서토론" /></a></h1>
+		</div>
+		<div class="my_info">
+			<button type="button" class="my_name" id="myMenuBtn">홍길동</button>
+			<ul class="my_menu" id="myMenu">
+				<li><a href="#none" class="link">내서재</a></li>
+				<li><a href="#none" class="link">내정보 수정</a></li>
+				<li><a href="#none" class="link">로그아웃</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- //[header] -->
+	<!-- [quick menu] -->
+	<aside class="quick_menu" id="quickMenu">
+		<ul class="list_quick">
+			<li><a href="#none">Q&A</a></li>
+			<li><a href="#none">FAQ</a></li>
+			<li><a href="#none" class="talks">School Talks</a></li>
+		</ul>
+		<button type="button" class="quick_position top" id="quickTop">top</button>
+		<button type="button" class="quick_position bottom" id="quickBottom">bottom</button>
+	</aside>
+	<!-- //[quick menu] -->
+	<section class="container">
+		<div class="sub_contents">
+			<h2 class="sub_headline">토론 교육&middot;행사</h2>
+			
+			<!-- 탭 -->
+			<ul class="tab_comm">
+				<li class="on"><a href="#none">전체</a></li>
+				<li><a href="#none">예정</a></li>
+				<li><a href="#none">종료</a></li>
+			</ul>
+			<!-- //탭 -->
+
+			<div class="box_search">
+				<label for="keyword"><input type="text" id="keyword" class="keyword"></label>
+				<button type="button" class="btn_search" title="검색하기">검색버튼</button>
+			</div>
+
+			<div class="box_total">
+				<p class="total">총 1,201개 조회되었습니다.</p>
+				<a href="#none" class="link_wrt">행사등록</a>
+			</div>
+
+			<div class="box_option">
+				<label for="available" class="chk_comm">
+					<input type="checkbox" name="" id="available">
+					<span class="chk_box"></span>
+					<span class="txt">신청가능한 행사만보기</span>
+				</label>
+				<select name="" id="" class="select_opt">
+					<option value="">전체</option>
+					<option value="">교육</option>
+					<option value="">행사</option>
+				</select>
+				<select name="" id="" class="select_opt">
+					<option value="">행사명</option>
+					<option value="">행사 등록일</option>
+				</select>
+				<button type="button" class="view_type list on" id="listTypeBtn" title="리스트형">리스트형 버튼</button>
+				<button type="button" class="view_type thumb" id="thumbTypeBtn" title="섬네일형">섬네일형 버튼</button>
+			</div>
+
+			<!-- 교육,행사 리스트 : Start --> <!-- ** 2019-06-24 : 섬네일,제목,한줄소개 a태그로 변경 -->
+			<ul class="list_webzine">
+				<li>
+					<span class="no">1.</span>
+					<a href="#none" class="thumb"><img src="../images/thumb_img01.jpg" alt="전국 대학생 토론대회" /></a>
+					<a href="#none" class="title"><strong><em class="emp">[행사]</em>전국 대학생 토론대회</strong></a>	
+					<span class="info"><span>2019.05.19 ~ 2019.05.23</span><span>미추홀도서관</span><span>대학생</span></span>
+					<span class="term"><em class="tit">신청기간 :</em>2019.04.15 ~ 2019.04.23</span>
+					<a href="#none" class="comment">표현하고 싶어도, 나아가고 싶어도 아직 그 방법을 모르는 청춘들에게 선사하는 열정의 언어. 독서토론을 통한 언어의 교류로 보다 성숙해지고 싶은 청소년들에게 소개합니다.</a>
+					<a href="#none" class="btn_request">신청하기</a>
+					<a href="#none" class="link_over">
+						<dl class="define_over">
+							<dt>전국 대학생 토론대회</dt>
+							<dd>표현하고 싶어도, 나아가고 싶어도 아직 그 방법을 모르는 청춘들에게 선사하는 열정의 언어. 독서토론을 통한 언어의 교류로 보다 성숙해지고 싶은 청소년들에게 소개합니다.</dd>
+						</dl>
+					</a>
+					<span class="write">2018.05.01 13:30 등록</span>
+				</li>
+				<li>
+					<span class="no">2.</span>
+					<a href="#none" class="thumb"><img src="../images/thumb_img02.jpg" alt="청년상상 불가능의 세계를 켜다" /></a>
+					<a href="#none" class="title"><strong><em class="emp">[교육]</em>청년상상 불가능의 세계를 켜다</strong></a>	
+					<span class="info"><span>2019.05.19 ~ 2019.05.23</span><span>미추홀도서관</span><span>대학생</span></span>
+					<span class="term"><em class="tit">신청기간 :</em>2019.04.15 ~ 2019.04.23</span>
+					<a href="#none" class="comment">5·18민주화운동의 참된 정신을 계승하고 깊이 있는 토론을 통해, 청소년들이 다양한 주제에 대한 폭넓은 이해와 민주적 소양을 함양하기 위해 2001년부터 5·18전국고등학생토론대회를 개최해 왔으며 해로 12회를 맞는다.</a>
+					<a href="#none" class="btn_request close" onclick="javascript:openPopup('confirmPopup');">신청종료</a>
+					<a href="#none" class="link_over">
+						<dl class="define_over">
+							<dt>청년상상 불가능의 세계를 켜다</dt>
+							<dd>5·18민주화운동의 참된 정신을 계승하고 깊이 있는 토론을 통해, 청소년들이 다양한 주제에 대한 폭넓은 이해와 민주적 소양을 함양하기 위해 2001년부터 5·18전국고등학생토론대회를 개최해 왔으며 해로 12회를 맞는다.</dd>
+						</dl>
+					</a>
+					<span class="write">2018.05.01 13:30 등록</span>
+				</li>
+				<li>
+					<span class="no">3.</span>
+					<a href="#none" class="thumb"><img src="../images/thumb_img01.jpg" alt="전국 대학생 토론대회" /></a>
+					<a href="#none" class="title"><strong><em class="emp">[행사]</em>전국 대학생 토론대회</strong></a>	
+					<span class="info"><span>2019.05.19 ~ 2019.05.23</span><span>미추홀도서관</span><span>대학생</span></span>
+					<span class="term"><em class="tit">신청기간 :</em>2019.04.15 ~ 2019.04.23</span>
+					<a href="#none" class="comment">표현하고 싶어도, 나아가고 싶어도 아직 그 방법을 모르는 청춘들에게 선사하는 열정의 언어. 독서토론을 통한 언어의 교류로 보다 성숙해지고 싶은 청소년들에게 소개합니다.</a>
+					<a href="#none" class="btn_request cancel" onclick="javascript:openPopup('confirmPopup');">신청취소</a>
+					<a href="#none" class="link_over">
+						<dl class="define_over">
+							<dt>전국 대학생 토론대회</dt>
+							<dd>표현하고 싶어도, 나아가고 싶어도 아직 그 방법을 모르는 청춘들에게 선사하는 열정의 언어. 독서토론을 통한 언어의 교류로 보다 성숙해지고 싶은 청소년들에게 소개합니다.</dd>
+						</dl>
+					</a>
+					<span class="write">2018.05.01 13:30 등록</span>
+				</li>
+				<li>
+					<span class="no">4.</span>
+					<a href="#none" class="thumb"><img src="../images/thumb_img02.jpg" alt="청년상상 불가능의 세계를 켜다" /></a>
+					<a href="#none" class="title"><strong><em class="emp">[교육]</em>청년상상 불가능의 세계를 켜다</strong></a>	
+					<span class="info"><span>2019.05.19 ~ 2019.05.23</span><span>미추홀도서관</span><span>대학생</span></span>
+					<span class="term"><em class="tit">신청기간 :</em>2019.04.15 ~ 2019.04.23</span>
+					<a href="#none" class="comment">5·18민주화운동의 참된 정신을 계승하고 깊이 있는 토론을 통해, 청소년들이 다양한 주제에 대한 폭넓은 이해와 민주적 소양을 함양하기 위해 2001년부터 5·18전국고등학생토론대회를 개최해 왔으며 해로 12회를 맞는다.</a>
+					<a href="#none" class="btn_request impossible" onclick="javascript:openPopup('confirmPopup');">신청불가</a>
+					<a href="#none" class="link_over">
+						<dl class="define_over">
+							<dt>청년상상 불가능의 세계를 켜다</dt>
+							<dd>5·18민주화운동의 참된 정신을 계승하고 깊이 있는 토론을 통해, 청소년들이 다양한 주제에 대한 폭넓은 이해와 민주적 소양을 함양하기 위해 2001년부터 5·18전국고등학생토론대회를 개최해 왔으며 해로 12회를 맞는다.</dd>
+						</dl>
+					</a>
+					<span class="write">2018.05.01 13:30 등록</span>
+				</li>
+				<li>
+					<span class="no">5.</span>
+					<a href="#none" class="thumb"><img src="../images/thumb_img01.jpg" alt="전국 대학생 토론대회" /></a>
+					<a href="#none" class="title"><strong><em class="emp">[행사]</em>전국 대학생 토론대회</strong></a>	
+					<span class="info"><span>2019.05.19 ~ 2019.05.23</span><span>미추홀도서관</span><span>대학생</span></span>
+					<span class="term"><em class="tit">신청기간 :</em>2019.04.15 ~ 2019.04.23</span>
+					<a href="#none" class="comment">표현하고 싶어도, 나아가고 싶어도 아직 그 방법을 모르는 청춘들에게 선사하는 열정의 언어. 독서토론을 통한 언어의 교류로 보다 성숙해지고 싶은 청소년들에게 소개합니다.</a>
+					<a href="#none" class="btn_request cancel" onclick="javascript:openPopup('confirmPopup');">신청취소</a>
+					<a href="#none" class="link_over">
+						<dl class="define_over">
+							<dt>전국 대학생 토론대회</dt>
+							<dd>표현하고 싶어도, 나아가고 싶어도 아직 그 방법을 모르는 청춘들에게 선사하는 열정의 언어. 독서토론을 통한 언어의 교류로 보다 성숙해지고 싶은 청소년들에게 소개합니다.</dd>
+						</dl>
+					</a>
+					<span class="write">2018.05.01 13:30 등록</span>
+				</li>
+				<li>
+					<span class="no">6.</span>
+					<a href="#none" class="thumb"><img src="../images/thumb_img02.jpg" alt="청년상상 불가능의 세계를 켜다" /></a>
+					<a href="#none" class="title"><strong><em class="emp">[교육]</em>청년상상 불가능의 세계를 켜다</strong></a>	
+					<span class="info"><span>2019.05.19 ~ 2019.05.23</span><span>미추홀도서관</span><span>대학생</span></span>
+					<span class="term"><em class="tit">신청기간 :</em>2019.04.15 ~ 2019.04.23</span>
+					<a href="#none" class="comment">5·18민주화운동의 참된 정신을 계승하고 깊이 있는 토론을 통해, 청소년들이 다양한 주제에 대한 폭넓은 이해와 민주적 소양을 함양하기 위해 2001년부터 5·18전국고등학생토론대회를 개최해 왔으며 해로 12회를 맞는다.</a>
+					<a href="#none" class="btn_request close" onclick="javascript:openPopup('confirmPopup');">신청종료</a>
+					<a href="#none" class="link_over">
+						<dl class="define_over">
+							<dt>청년상상 불가능의 세계를 켜다</dt>
+							<dd>5·18민주화운동의 참된 정신을 계승하고 깊이 있는 토론을 통해, 청소년들이 다양한 주제에 대한 폭넓은 이해와 민주적 소양을 함양하기 위해 2001년부터 5·18전국고등학생토론대회를 개최해 왔으며 해로 12회를 맞는다.</dd>
+						</dl>
+					</a>
+					<span class="write">2018.05.01 13:30 등록</span>
+				</li>
+			</ul>
+			<!-- //교육,행사 리스트 : End -->
+
+			<!-- 페이징 -->
+			<div class="paging">
+				<a href="#none" class="first">맨처음</a>
+				<a href="#none" class="prev">이전</a>
+				<a href="#none" class="page on">1</a>
+				<a href="#none" class="page">2</a>
+				<a href="#none" class="page">3</a>
+				<a href="#none" class="page">4</a>
+				<a href="#none" class="page">5</a>
+				<a href="#none" class="next">다음</a>
+				<a href="#none" class="last">마지막</a>
+			</div>
+			<!-- //페이징 -->
+
+		</div>
+	</section>
+	<!-- [footer] -->
+	<footer class="footer_discuss">
+		<div class="inner">
+			<span class="logo"><img src="../images/logo_footer.png" alt="School Books 하단 로고" /></span>
+			<strong class="company">주식회사 이씨오</strong>
+			<address class="addr">
+				대표자: 이사영 / 사업자등록번호: 211-86-14883<br>
+				서울특별시 성동구 광나루6길 우림e-Biz센터 3층(성수2가 3동 280-21)<br>
+				Tel. 02-2024-9900 / Fax. 02-2024-9800 / E-mail. sales@eco.co.kr
+			</address>
+			<p class="copy">COPYRIGHT &copy; 2019 ECO, Inc. ALL RIGHTS RESERVED.</p>
+			<ul class="ft_menu">
+				<li><a href="#none">이용약관</a></li>
+				<li><a href="#none">개인정보취급방침</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- //[footer] -->
+
+	<!-- [팝업] 알림팝업 Start -->
+	<div class="pop_comm" id="confirmPopup">
+		<div class="wrap_confirm">
+			<strong class="question">폐강된 교육 및 행사입니다.</strong>
+			<div class="btn_area">
+				<a href="javascript:closePopup('confirmPopup');" class="btn confirm">확인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //[팝업] 알림팝업 End -->
+</div>
+</body>
+</html>

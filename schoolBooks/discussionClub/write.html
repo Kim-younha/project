@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<title>독서토론</title>
+<link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+<div id="wrapAll">
+	<!-- [header] -->
+	<header class="header_discuss">
+		<div class="inner">
+			<h1 class="logo"><a href="#none"><img src="../images/logo.png" alt="독서토론" /></a></h1>
+		</div>
+		<div class="my_info">
+			<button type="button" class="my_name" id="myMenuBtn">홍길동</button>
+			<ul class="my_menu" id="myMenu">
+				<li><a href="#none" class="link">내서재</a></li>
+				<li><a href="#none" class="link">내정보 수정</a></li>
+				<li><a href="#none" class="link">로그아웃</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- //[header] -->
+	<!-- [quick menu] -->
+	<aside class="quick_menu" id="quickMenu">
+		<ul class="list_quick">
+			<li><a href="#none">Q&A</a></li>
+			<li><a href="#none">FAQ</a></li>
+			<li><a href="#none" class="talks">School Talks</a></li>
+		</ul>
+		<button type="button" class="quick_position top" id="quickTop">top</button>
+		<button type="button" class="quick_position bottom" id="quickBottom">bottom</button>
+	</aside>
+	<!-- //[quick menu] -->
+	<section class="container">
+		<div class="sub_contents">
+			<h2 class="sub_headline">토론동아리 생성</h2>
+			
+			<!-- 토론동아리 생성 form : Start -->
+			<form action="">
+				<fieldset>
+					<legend class="screen_out">토론동아리 생성 form</legend>
+					<table class="tbl_comm">
+						<colgroup>
+							<col style="width:180px">
+							<col style="width:*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">동아리명 <em class="essential">*</em></th>
+								<td>
+									<input type="text" name="" class="inp_overlap" />
+									<button type="button" class="btn2 overlap">중복확인</button>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">동아리 멤버 수 제한 <em class="essential">*</em></th>
+								<td>
+									<div class="group_chk">
+										<input type="text" name="" />
+										<label for="limit" class="chk_comm">
+											<input type="checkbox" name="" id="limit">
+											<span class="chk_box"></span>
+											<span class="txt">제한없음</span>
+										</label>
+										<p class="txt_guide">설정인원 도달 시 더 이상 가입신청을 받지 않습니다.</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">소개글 작성</th>
+								<td>
+									<div class="box_editer">
+										에디터 영역
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">한줄소개</th>
+								<td>
+									<textarea name="" id=""></textarea>
+									<p class="txt_guide">동아리의 간략한 소개로 전체 동아리 목록에서 보여지는 문구 입니다.</p>
+								</td>
+							</tr>
+							<tr class="tr_question">
+								<th scope="row">질문 1</th>
+								<td>
+									<input type="text" name="" class="inp_question" value="동아리에 가입하게 된 배경은 무엇입니까?" />
+									<button type="button" class="btn update">수정</button>
+									<button type="button" class="btn2 delete">삭제</button>
+								</td>
+							</tr>
+							<tr class="tr_question">
+								<th scope="row">질문 2</th>
+								<td>
+									<input type="text" name="" class="inp_question" />
+									<button type="button" class="btn question">질문등록</button>
+								</td>
+							</tr>
+							<tr class="tr_question">
+								<th scope="row">질문 3</th>
+								<td>
+									<input type="text" name="" class="inp_question" />
+									<button type="button" class="btn question">질문등록</button>
+								</td>
+							</tr>
+							<tr class="tr_question">
+								<th scope="row">질문 4</th>
+								<td>
+									<input type="text" name="" class="inp_question" />
+									<button type="button" class="btn question">질문등록</button>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">질문 5</th>
+								<td>
+									<input type="text" name="" class="inp_question" />
+									<button type="button" class="btn question">질문등록</button>
+									<p class="txt_guide">가입 질문은 5개까지 가능하며, 답변 내용은 회원목록에서 확인 할 수 있습니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">동아리 비공개</th>
+								<td>
+									<div class="group_chk">
+										<label for="closed" class="chk_comm ml0">
+											<input type="checkbox" name="" id="closed">
+											<span class="chk_box"></span>
+											<span class="txt">설정</span>
+										</label>
+										<p class="txt_guide">설정 시 소개, 활동목록  외 메뉴는 동아리 멤버만 조회가능합니다.</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">썸네일</th>
+								<td>
+									<div class="box_preview">
+										<span id="previewImg" class="img_preview"><img src="../images/thumb_img01.jpg" alt="섬네일 미리보기" /></span>
+										<label for="previewFile" class="btn_preview">이미지찾기</label>
+										<input type="file" id="previewFile" class="file_preview" />
+										<button type="button" id="previewDel" class="del_preview">삭제</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn_area ta_r">
+						<button type="button" class="btn submit">등록</button>
+						<button type="button" class="btn cancel">취소</button>
+					</div>
+				</fieldset>
+			</form>
+			<!-- //토론동아리 생성 form : End -->
+
+		</div>
+	</section>
+	<!-- [footer] -->
+	<footer class="footer_discuss">
+		<div class="inner">
+			<span class="logo"><img src="../images/logo_footer.png" alt="School Books 하단 로고" /></span>
+			<strong class="company">주식회사 이씨오</strong>
+			<address class="addr">
+				대표자: 이사영 / 사업자등록번호: 211-86-14883<br>
+				서울특별시 성동구 광나루6길 우림e-Biz센터 3층(성수2가 3동 280-21)<br>
+				Tel. 02-2024-9900 / Fax. 02-2024-9800 / E-mail. sales@eco.co.kr
+			</address>
+			<p class="copy">COPYRIGHT &copy; 2019 ECO, Inc. ALL RIGHTS RESERVED.</p>
+			<ul class="ft_menu">
+				<li><a href="#none">이용약관</a></li>
+				<li><a href="#none">개인정보취급방침</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- //[footer] -->
+</div>
+</body>
+</html>

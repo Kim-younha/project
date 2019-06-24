@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ko">
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<title>독서토론</title>
+<link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+<div id="wrapAll">
+	<!-- [header] -->
+	<header class="header_discuss">
+		<div class="inner">
+			<h1 class="logo"><a href="#none"><img src="../images/logo.png" alt="독서토론" /></a></h1>
+		</div>
+		<div class="my_info">
+			<button type="button" class="my_name" id="myMenuBtn">홍길동</button>
+			<ul class="my_menu" id="myMenu">
+				<li><a href="#none" class="link">내서재</a></li>
+				<li><a href="#none" class="link">내정보 수정</a></li>
+				<li><a href="#none" class="link">로그아웃</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- //[header] -->
+	<!-- [quick menu] -->
+	<aside class="quick_menu" id="quickMenu">
+		<ul class="list_quick">
+			<li><a href="#none">Q&A</a></li>
+			<li><a href="#none">FAQ</a></li>
+			<li><a href="#none" class="talks">School Talks</a></li>
+		</ul>
+		<button type="button" class="quick_position top" id="quickTop">top</button>
+		<button type="button" class="quick_position bottom" id="quickBottom">bottom</button>
+	</aside>
+	<!-- //[quick menu] -->
+	<section class="container">
+		<div class="top_detail">
+			<div class="bg_visual">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="480" id="blurred_wd1v02jas" class="bg-blur" viewBox="0 0 1920 480" preserveAspectRatio="none">
+					<filter id="blur_wd1v02jas">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="40"></feGaussianBlur>
+					</filter>
+					<image x="0" y="0" width="100%" height="480" externalResourcesRequired="true" xlink:href="../images/thumb_img03.jpg" style="filter:url(#blur_wd1v02jas)" preserveAspectRatio="none" />
+				</svg>
+				<span class="dim"></span>
+			</div>
+			<div class="info_detail">
+				<div class="inner">
+					<span class="thumb"><img src="../images/thumb_img03.jpg" alt="독서토론 모임" /></span>
+					<dl class="title_info">
+						<dt><h2 class="title">독서토론 모임</h2></dt>
+						<dd class="txt">혼자가 아닌 '같이' 읽는 독서를 통해 마음을 나눈다! 독서를 혼자가 아닌 여럿이 함께 읽음으로써 얻을 수 있는 '가치'를 이야기한다.</dd>
+					</dl>
+					<dl class="info">
+						<dt>개설일</dt>
+						<dd>2019.03.15</dd>
+					</dl>
+					<dl class="info">
+						<dt>리 더</dt>
+						<dd>홍길동</dd>
+					</dl>
+					<div class="btn_area">
+						<button type="button" class="btn2 request" onclick="javascript:openPopup('joinQuestionPopup');">가입신청</button>
+						<!-- <button type="button" class="btn2 cancel">신청취소</button> --><!-- 필요시 주석 풀어서 사용 -->
+						<!-- <button type="button" class="btn2 close">가입탈퇴</button> --><!-- 필요시 주석 풀어서 사용 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sub_contents detail">
+			<ul class="tab_comm2">
+				<li><a href="#none" class="intro">소개</a></li>
+				<li><a href="#none" class="activity">활동</a></li>
+				<li class="on"><a href="#none" class="board">게시판</a></li>
+				<li><a href="#none" class="schedule">일정</a></li>
+				<li><a href="#none" class="member">회원목록</a></li>
+				<li><a href="#none" class="setting">설정</a></li>
+			</ul>
+			<div class="tab_contents">
+				<article class="tab_cont intro">
+					<h3 class="screen_out">소개</h3>
+				</article>
+				<article class="tab_cont activity">
+					<h3 class="screen_out">활동</h3>
+				</article>
+				<article class="tab_cont board" style="display:block;">
+					<h3 class="screen_out">게시판</h3>
+					
+					<!-- 게시판 상세보기 : Start -->
+					<div class="board_view">
+						<div class="top">
+							<strong class="tit_vw">[투표] 투표 등록 예시화면</strong>
+							<ul class="box_items">
+								<li>관리자</li>
+								<li>2018.05.21 16:30</li>
+								<li>조회 311</li>
+							</ul>
+							<ul class="box_items links">
+								<li><a href="#none" class="link">수정</a></li>
+								<li><a href="#none" class="link">삭제</a></li>
+							</ul>
+						</div>
+						<div class="cont_vote">
+							<div class="intro_vote">
+								<span class="total"><strong class="cnt">30</strong>명 참여중</span>
+								<span class="term">투표기간 : 2019.05.30 ~ 2019.06.30</span>
+							</div>
+							<!-- 투표하기 리스트 : Start -->
+							<ul class="list_vote">
+								<li>
+									<label for="item01" class="item_vote">
+										<input type="checkbox" name="" id="item01">
+										<span class="icon_check"></span>
+										<span class="thumb"><img src="../images/vote_book01.jpg" alt="아들러의 감정수업" /></span>
+										<strong class="subject">아들러의 감정수업</strong>
+										<dl class="info">
+											<dt>작가</dt>
+											<dd>게리 D.멕케이</dd>
+										</dl>
+										<dl class="info">
+											<dt>출판</dt>
+											<dd>시목</dd>
+										</dl>
+										<dl class="info">
+											<dt>발매</dt>
+											<dd>2017</dd>
+										</dl>
+									</label>
+								</li>
+								<li>
+									<label for="item02" class="item_vote">
+										<input type="checkbox" name="" id="item02">
+										<span class="icon_check"></span>
+										<span class="thumb"><img src="../images/vote_book02.jpg" alt="감정의 온도" /></span>
+										<strong class="subject">감정의 온도</strong>
+										<dl class="info">
+											<dt>작가</dt>
+											<dd>게리 D.멕케이</dd>
+										</dl>
+										<dl class="info">
+											<dt>출판</dt>
+											<dd>시목</dd>
+										</dl>
+										<dl class="info">
+											<dt>발매</dt>
+											<dd>2017</dd>
+										</dl>
+									</label>
+								</li>
+								<li>
+									<label for="item03" class="item_vote">
+										<input type="checkbox" name="" id="item03">
+										<span class="icon_check"></span>
+										<span class="thumb"><img src="../images/vote_book01.jpg" alt="아들러의 감정수업" /></span>
+										<strong class="subject">아들러의 감정수업</strong>
+										<dl class="info">
+											<dt>작가</dt>
+											<dd>게리 D.멕케이</dd>
+										</dl>
+										<dl class="info">
+											<dt>출판</dt>
+											<dd>시목</dd>
+										</dl>
+										<dl class="info">
+											<dt>발매</dt>
+											<dd>2017</dd>
+										</dl>
+									</label>
+								</li>
+							</ul>
+							<!-- //투표하기 리스트 : End -->
+							<div class="btn_area ta_r">
+								<button type="button" class="btn vote" onclick="javascript:openPopup('confirmPopup');">투표하기</button>
+								<button type="button" class="btn result" onclick="javascript:openPopup('voteResultPopup');">결과보기</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn_area ta_r">
+						<button type="button" class="btn list">목록</button>
+					</div>
+					<table class="prev_next">
+						<colgroup>
+							<col style="width:130px" />
+							<col style="width:*" />
+							<col style="width:100px" />
+							<col style="width:100px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<td><span class="prev">이전글</span></td>
+								<td><a href="#none" class="title">게시판 이전글 입니다.</a></td>
+								<td>관리자</td>
+								<td>2018.03.02</td>
+							</tr>
+							<tr>
+								<td><span class="next">다음글</span></td>
+								<td><a href="#none" class="title">게시판 다음글 입니다.</a></td>
+								<td>관리자</td>
+								<td>2018.03.02</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- //게시판 상세보기 : End -->
+
+				</article>
+				<article class="tab_cont schedule">
+					<h3 class="screen_out">일정</h3>
+				</article>
+				<article class="tab_cont member">
+					<h3 class="screen_out">회원목록</h3>
+				</article>
+				<article class="tab_cont setting">
+					<h3 class="screen_out">설정</h3>
+				</article>
+			</div>
+		</div>
+	</section>
+	<!-- [footer] -->
+	<footer class="footer_discuss">
+		<div class="inner">
+			<span class="logo"><img src="../images/logo_footer.png" alt="School Books 하단 로고" /></span>
+			<strong class="company">주식회사 이씨오</strong>
+			<address class="addr">
+				대표자: 이사영 / 사업자등록번호: 211-86-14883<br>
+				서울특별시 성동구 광나루6길 우림e-Biz센터 3층(성수2가 3동 280-21)<br>
+				Tel. 02-2024-9900 / Fax. 02-2024-9800 / E-mail. sales@eco.co.kr
+			</address>
+			<p class="copy">COPYRIGHT &copy; 2019 ECO, Inc. ALL RIGHTS RESERVED.</p>
+			<ul class="ft_menu">
+				<li><a href="#none">이용약관</a></li>
+				<li><a href="#none">개인정보취급방침</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- //[footer] -->
+
+	<!-- [팝업]투표결과보기 Start -->
+	<div class="pop_comm pop_vote" id="voteResultPopup">
+		<div class="wrap_pop">
+			<div class="head_pop">
+				<strong class="title">투표등록 결과보기</strong>
+				<button type="button" class="btn_close" onclick="javascript:closePopup('voteResultPopup');">팝업닫기</button>
+			</div>
+			<div class="body_pop">
+				<ul class="list_vote result">
+					<li>
+						<div class="item_vote">
+							<span class="thumb"><img src="../images/vote_book01.jpg" alt="아들러의 감정수업" /></span>
+							<strong class="subject">아들러의 감정수업</strong>
+							<dl class="info">
+								<dt>작가</dt>
+								<dd>게리 D.멕케이</dd>
+							</dl>
+							<dl class="info">
+								<dt>출판</dt>
+								<dd>시목</dd>
+							</dl>
+							<dl class="info">
+								<dt>발매</dt>
+								<dd>2017</dd>
+							</dl>
+							<div class="result_data">
+								<span class="graph"><span class="bar"></span></span>
+								<span class="count">82표</span>
+								<span class="percent">36%</span>
+								<button type="button" class="btn_voter">투표자보기</button>
+								<div class="voter">
+									<ul class="list_voter">
+										<li>강태윤</li>
+										<li>김민정</li>
+										<li>심다희</li>
+										<li>이승택</li>
+										<li>장지선</li>
+										<li>이승택</li>
+										<li>장지선</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item_vote">
+							<span class="thumb"><img src="../images/vote_book02.jpg" alt="감정의 온도" /></span>
+							<strong class="subject">감정의 온도</strong>
+							<dl class="info">
+								<dt>작가</dt>
+								<dd>게리 D.멕케이</dd>
+							</dl>
+							<dl class="info">
+								<dt>출판</dt>
+								<dd>시목</dd>
+							</dl>
+							<dl class="info">
+								<dt>발매</dt>
+								<dd>2017</dd>
+							</dl>
+							<div class="result_data">
+								<span class="graph"><span class="bar"></span></span>
+								<span class="count">123표</span>
+								<span class="percent">54%</span>
+								<button type="button" class="btn_voter">투표자보기</button>
+								<div class="voter">
+									<ul class="list_voter">
+										<li>강태윤</li>
+										<li>김민정</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item_vote">
+							<span class="thumb"><img src="../images/vote_book01.jpg" alt="아들러의 감정수업" /></span>
+							<strong class="subject">아들러의 감정수업</strong>
+							<dl class="info">
+								<dt>작가</dt>
+								<dd>게리 D.멕케이</dd>
+							</dl>
+							<dl class="info">
+								<dt>출판</dt>
+								<dd>시목</dd>
+							</dl>
+							<dl class="info">
+								<dt>발매</dt>
+								<dd>2017</dd>
+							</dl>
+							<div class="result_data">
+								<span class="graph"><span class="bar"></span></span>
+								<span class="count">22표</span>
+								<span class="percent">10%</span>
+								<button type="button" class="btn_voter">투표자보기</button>
+								<div class="voter">
+									<ul class="list_voter">
+										<li>강태윤</li>
+										<li>김민정</li>
+										<li>심다희</li>
+										<li>이승택</li>
+										<li>장지선</li>
+										<li>이승택</li>
+										<li>장지선</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item_vote">
+							<span class="thumb"><img src="../images/vote_book02.jpg" alt="감정의 온도" /></span>
+							<strong class="subject">감정의 온도</strong>
+							<dl class="info">
+								<dt>작가</dt>
+								<dd>게리 D.멕케이</dd>
+							</dl>
+							<dl class="info">
+								<dt>출판</dt>
+								<dd>시목</dd>
+							</dl>
+							<dl class="info">
+								<dt>발매</dt>
+								<dd>2017</dd>
+							</dl>
+							<div class="result_data">
+								<span class="graph"><span class="bar"></span></span>
+								<span class="count">52표</span>
+								<span class="percent">25%</span>
+								<button type="button" class="btn_voter">투표자보기</button>
+								<div class="voter">
+									<ul class="list_voter">
+										<li>강태윤</li>
+										<li>김민정</li>
+										<li>심다희</li>
+										<li>이승택</li>
+										<li>장지선</li>
+										<li>이승택</li>
+										<li>장지선</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="btn_area ta_c">
+					<a href="javascript:closePopup('voteResultPopup');" class="btn confirm">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //[팝업]투표결과보기 End -->
+
+	<!-- [팝업] 투표 경고 Start -->
+	<div class="pop_comm" id="confirmPopup">
+		<div class="wrap_confirm">
+			<strong class="question">동아리멤버만 투표가 가능합니다.</strong>
+			<div class="btn_area">
+				<a href="javascript:closePopup('confirmPopup');" class="btn confirm">확인</a>
+			</div>
+		</div>
+	</div>
+	<!-- //[팝업]투표 경고 End -->
+</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>퍼블 작업리스트</title>
+<style>
+@font-face {font-family:'Nanum Gothic';font-style:normal;font-weight:400;src:url(./fonts/NanumGothic.eot);src:local('Nanum Gothic'),url(./fonts/NanumGothic.eot?#iefix) format('embedded-opentype'),url(./fonts/NanumGothic.woff) format('woff'),url(./fonts/NanumGothic.ttf) format('truetype')}
+@font-face {font-family:'Nanum Gothic';font-style:normal;font-weight:bold;src:url(./fonts/NanumGothicBold.eot);src:local('Nanum Gothic'),url(./fonts/NanumGothicBold.eot?#iefix) format('embedded-opentype'),url(./fonts/NanumGothicBold.woff) format('woff'),url(./fonts/NanumGothicBold.ttf) format('truetype')}
+* {margin:0;padding:0;font-family: 'Nanum Gothic'}
+a {text-decoration:none}
+h1 {margin-bottom:10px;font-size:14px;color:#000}
+h2 {margin-bottom:5px;padding:5px;font-size:13px;color:#666;background-color:#e8e8e8}
+h3 {display:inline-block;padding:3px;font-size:11px;color:#000}
+ul {list-style:none}
+section {margin-bottom:30px}
+#wrap {padding:10px}
+.list {margin-bottom:10px}
+.list > li {padding:5px;border-bottom:1px solid #ddd;font-size:12px}
+.list > li:last-child {border-bottom:0 none}
+.list a {display:inline-block;margin-right:10px;font-weight:bold;color:#333}
+.list a:hover {color:#fd7f02}
+.tab {padding:0 10px}
+.url {color:#666}
+.emp {font-size:11px;color:#ff0000}
+.state {margin-left:10px;padding:2px 3px;font-size:11px;color:#fff;background-color:#a9c4e1}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>독서토론 퍼블작업리스트 ( 화면확인 ::::: 제목클릭! )</h1>
+
+		<section>
+		<h2>메인</h2>
+		<ul class="list">
+			<li>
+				<a href="./main.html" target="_blank">독서토론 메인</a>
+				<span class="url">/main.html</span>
+			</li>
+		</ul>
+		</section>
+
+		<section>
+		<h2>토론 교육&middot;행사</h2>
+		<ul class="list">
+			<li>
+				<a href="./discussionEvent/list.html" target="_blank">교육&middot;행사 리스트</a>
+				<span class="url">/discussionEvent/list.html</span>
+				<span class="emp">( 신청불가 팝업 포함 )</span>
+			</li>
+			<li>
+				<a href="./discussionEvent/write.html" target="_blank">교육&middot;행사 등록화면</a>
+				<span class="url">/discussionEvent/write.html</span>
+			</li>
+			<li>
+				<a href="./discussionEvent/detail.html" target="_blank">교육&middot;행사 상세보기 </a>
+				<span class="url">/discussionEvent/detail.html</span>
+				<span class="emp">( 소개 / 공지사항 리스트 / 활동 리스트 / 일정 / 회원관리 / 설정 / 개인정보수집및동의 팝업 / 삭제하시겠습니까 팝업 / 강제탈퇴사유 팝업 포함 )</span>
+			</li>
+		</ul>
+		<div class="tab">
+			<ul class="list">
+				<li>
+					<a href="./discussionEvent/noticeWrite.html" target="_blank">공지사항(탭) - 등록화면</a>
+					<span class="url">/discussionEvent/noticeWrite.html</span>
+				</li>
+				<li>
+					<a href="./discussionEvent/noticeDetail.html" target="_blank">공지사항(탭) - 상세보기</a>
+					<span class="url">/discussionEvent/noticeDetail.html</span>
+				</li>
+			</ul>
+			<ul class="list">
+				<li>
+					<a href="./discussionEvent/activityWrite.html" target="_blank">활동(탭) - 등록화면</a>
+					<span class="url">/discussionEvent/activityWrite.html</span>
+				</li>
+				<li>
+					<a href="./discussionEvent/activityDetail.html" target="_blank">활동(탭) - 상세보기</a>
+					<span class="url">/discussionEvent/activityDetail.html</span>
+				</li>
+			</ul>
+		</div>
+		</section>
+
+		
+		<section>
+		<h2>토론 동아리</h2>
+		<ul class="list">
+			<li>
+				<a href="./discussionClub/list.html" target="_blank">동아리 리스트</a>
+				<span class="url">/discussionClub/list.html</span>
+				<span class="emp">( 신청마감 팝업 포함 )</span>
+			</li>
+			<li>
+				<a href="./discussionClub/write.html" target="_blank">동아리 생성화면</a>
+				<span class="url">/discussionClub/write.html</span>
+			</li>
+			<li>
+				<a href="./discussionClub/detail.html" target="_blank">동아리 상세보기 </a>
+				<span class="url">/discussionClub/detail.html</span>
+				<span class="emp">( 소개 / 활동 리스트 / 게시판 리스트 / 일정 / 회원목록 / 설정 / 동아리가입질문 팝업  )</span>
+			</li>
+		</ul>
+		<div class="tab">
+			<ul class="list">
+				<li>
+					<a href="./discussionClub/boardWrite.html" target="_blank">게시판(탭) - 등록/투표등록</a>
+					<span class="url">/discussionClub/boardWrite.html</span>
+					<span class="emp">( 투표미리보기 팝업 / 분류선택경고 팝업 포함 )</span>
+				</li>
+				<li>
+					<a href="./discussionClub/boardDetail.html" target="_blank">게시판(탭) - 상세화면</a>
+					<span class="url">/discussionClub/boardDetail.html</span>
+					<span class="emp">( 탈퇴경고 팝업 포함 )</span>
+				</li>
+				<li>
+					<a href="./discussionClub/boardVote.html" target="_blank">게시판(탭) - 투표화면 </a>
+					<span class="url">/discussionClub/boardVote.html</span>
+					<span class="emp">( 투표결과보기 팝업 / 투표경고 팝업 포함 )</span>
+				</li>
+				<li>
+					<a href="./discussionClub/boardVoteFinished.html" target="_blank">게시판(탭) - 투표완료화면 </a>
+					<span class="url">/discussionClub/boardVoteFinished.html</span>
+				</li>
+			</ul>
+			<ul class="list">
+				<li>
+					<a href="./discussionClub/activityWrite.html" target="_blank">활동(탭) - 등록화면</a>
+					<span class="url">/discussionClub/activityWrite.html</span>
+				</li>
+				<li>
+					<a href="./discussionClub/activityDetail.html" target="_blank">활동(탭) - 상세보기 (참석자 등록 전)</a>
+					<span class="url">/discussionClub/activityDetail.html</span>
+					<span class="emp">( 참여인원 설정 팝업 / 활용도서 등록 팝업 포함 )</span>
+				</li>
+				<li>
+					<a href="./discussionClub/activityDetail2.html" target="_blank">활동(탭) - 상세보기 (참석자 등록 후)</a>
+					<span class="url">/discussionClub/activityDetail2.html</span>
+				</li>
+			</ul>
+		</div>
+		</section>
+
+
+	</div>
+</body>
+</html>

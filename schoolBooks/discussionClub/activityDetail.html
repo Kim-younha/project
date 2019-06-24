@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ko">
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<title>독서토론</title>
+<link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+<div id="wrapAll">
+	<!-- [header] -->
+	<header class="header_discuss">
+		<div class="inner">
+			<h1 class="logo"><a href="#none"><img src="../images/logo.png" alt="독서토론" /></a></h1>
+		</div>
+		<div class="my_info">
+			<button type="button" class="my_name" id="myMenuBtn">홍길동</button>
+			<ul class="my_menu" id="myMenu">
+				<li><a href="#none" class="link">내서재</a></li>
+				<li><a href="#none" class="link">내정보 수정</a></li>
+				<li><a href="#none" class="link">로그아웃</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- //[header] -->
+	<!-- [quick menu] -->
+	<aside class="quick_menu" id="quickMenu">
+		<ul class="list_quick">
+			<li><a href="#none">Q&A</a></li>
+			<li><a href="#none">FAQ</a></li>
+			<li><a href="#none" class="talks">School Talks</a></li>
+		</ul>
+		<button type="button" class="quick_position top" id="quickTop">top</button>
+		<button type="button" class="quick_position bottom" id="quickBottom">bottom</button>
+	</aside>
+	<!-- //[quick menu] -->
+	<section class="container">
+		<div class="top_detail">
+			<div class="bg_visual">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="480" id="blurred_wd1v02jas" class="bg-blur" viewBox="0 0 1920 480" preserveAspectRatio="none">
+					<filter id="blur_wd1v02jas">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="40"></feGaussianBlur>
+					</filter>
+					<image x="0" y="0" width="100%" height="480" externalResourcesRequired="true" xlink:href="../images/thumb_img03.jpg" style="filter:url(#blur_wd1v02jas)" preserveAspectRatio="none" />
+				</svg>
+				<span class="dim"></span>
+			</div>
+			<div class="info_detail">
+				<div class="inner">
+					<span class="thumb"><img src="../images/thumb_img03.jpg" alt="독서토론 모임" /></span>
+					<dl class="title_info">
+						<dt><h2 class="title">독서토론 모임</h2></dt>
+						<dd class="txt">혼자가 아닌 '같이' 읽는 독서를 통해 마음을 나눈다! 독서를 혼자가 아닌 여럿이 함께 읽음으로써 얻을 수 있는 '가치'를 이야기한다.</dd>
+					</dl>
+					<dl class="info">
+						<dt>개설일</dt>
+						<dd>2019.03.15</dd>
+					</dl>
+					<dl class="info">
+						<dt>리 더</dt>
+						<dd>홍길동</dd>
+					</dl>
+					<div class="btn_area">
+						<button type="button" class="btn2 request" onclick="javascript:openPopup('joinQuestionPopup');">가입신청</button>
+						<!-- <button type="button" class="btn2 cancel">신청취소</button> --><!-- 필요시 주석 풀어서 사용 -->
+						<!-- <button type="button" class="btn2 close">가입탈퇴</button> --><!-- 필요시 주석 풀어서 사용 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sub_contents detail">
+			<ul class="tab_comm2">
+				<li><a href="#none" class="intro">소개</a></li>
+				<li class="on"><a href="#none" class="activity">활동</a></li>
+				<li><a href="#none" class="board">게시판</a></li>
+				<li><a href="#none" class="schedule">일정</a></li>
+				<li><a href="#none" class="member">회원목록</a></li>
+				<li><a href="#none" class="setting">설정</a></li>
+			</ul>
+			<div class="tab_contents">
+				<article class="tab_cont intro">
+					<h3 class="screen_out">소개</h3>
+				</article>
+				<article class="tab_cont activity" style="display:block;">
+					<h3 class="screen_out">활동</h3>
+
+					<!-- [활동 상세보기 : Start] -->
+					<div class="top_activity">
+						<ul class="links_activity">
+							<li><a href="#none" class="link modify" title="수정하기">수정하기</a></li>
+							<li><a href="#none" class="link pdf" title="PDF 출력하기">PDF 출력하기</a></li>
+							<li><a href="#none" class="link print" title="화면 출력하기">화면 출력하기</a></li>
+						</ul>
+						<span class="thumb"><img src="../images/activity_img01.jpg" alt="12차시:토론실습" /></span>
+						<strong class="title">11차시 : 토론실습</strong>
+						<dl class="info">
+							<dt>날 짜</dt>
+							<dd>2018.04.23</dd>
+						</dl>
+						<dl class="info">
+							<dt>시 간</dt>
+							<dd>15시 30분</dd>
+						</dl>
+						<dl class="info">
+							<dt>장 소</dt>
+							<dd>미추홀도서관 대강당</dd>
+						</dl>
+						<dl class="info">
+							<dt>참 석</dt>
+							<dd><button type="button" class="btn write" onclick="javascript:openPopup('AttendPopup');">등록하기</button></dd>
+						</dl>
+					</div>
+					<div class="item_intro">
+						<strong class="tit_intro book">대표도서</strong>
+						<div class="represent_book">
+							<span class="thumb"><img src="../images/vote_book01.jpg" alt="아들러의 감정수업" /></span>
+							<dl class="info">
+								<dt>서명</dt>
+								<dd>아들러의 감정수업</dd>
+							</dl>
+							<dl class="info">
+								<dt>저자</dt>
+								<dd>게리 D.멕케이</dd>
+							</dl>
+							<dl class="info">
+								<dt>출판</dt>
+								<dd>시목</dd>
+							</dl>
+							<a href="#none" class="link_detail">상세보기</a>
+						</div>
+					</div>
+					<div class="item_intro">
+						<strong class="tit_intro topic">주제문</strong>
+						<p class="txt_intro">혼자 바라보는 것에 대하여</p>	
+					</div>
+					<div class="item_intro">
+						<strong class="tit_intro purify">발제문</strong>
+						<p class="txt_intro">지금까지 같이 바라보는 독서에 대하여 다뤄왔다. 이러한 경험을 바탕으로 각자 ‘같이 바라보는 것’의 장&middot;단점과 함께 ‘혼자 읽는 것’과 ‘같이 읽는 것’ 중 어느 방법이 더 효과적이라 생각하는지 이야기 해보자.</p>
+					</div>
+					<div class="item_intro">
+						<strong class="tit_intro webpage">웹페이지</strong>
+						<button type="button" class="btn_intro" id="webpageWrite" onclick="javascript:webpageWriteFn();">등록</button>
+						<button type="button" class="btn_intro" id="webpageFinish" onclick="javascript:webpageFinishFn();" style="display:none">완료</button>
+						<!-- 웹페이지 목록 Start -->
+						<ul class="list_page">
+							<li>
+								<a href="#none" target="_blank">지금까지 같이 바라보는 독서에 대하여 다뤄왔다.</a>
+								<div class="box_manage">
+									<span class="name">이승택</span>
+									<span class="date">2018.04.28</span>
+									<button type="button" class="btn_del">삭제</button>
+								</div>
+							</li>
+							<li>
+								<a href="#none" target="_blank">안산시, 정보 공유·협업 활성화를 위한 시민 강의 개최</a>
+								<div class="box_manage">
+									<span class="name">이승택</span>
+									<span class="date">2018.04.28</span>
+									<button type="button" class="btn_del">삭제</button>
+								</div>
+							</li>
+						</ul>
+						<!-- //웹페이지 목록 End -->
+						<!-- 웹페이지 추가 Start -->
+						<div class="box_append webpage" id="webpageAppendBox" style="display:none">
+							<ul class="list_append">
+								<li>
+									<input type="text" name="" class="inp_web" placeholder="링크제목 입력" />
+									<input type="text" name="" class="inp_web" placeholder="URL 입력" />
+									<button type="button" class="btn remove">제거</button>
+								</li>
+							</ul>
+							<button type="button" class="btn add" onclick="javascript:inpAppendFn('webpage');">추가</button>
+						</div>
+						<!-- //웹페이지 추가 End -->
+					</div>
+					<div class="item_intro">
+						<strong class="tit_intro video">영상자료</strong>
+						<button type="button" class="btn_intro" id="videoWrite" onclick="javascript:videoWriteFn();">등록</button>
+						<button type="button" class="btn_intro" id="videoFinish" onclick="javascript:videoFinishFn();" style="display:none">완료</button>
+						<!-- 영상자료 목록 Start -->
+						<ul class="list_page">
+							<li>
+								<a href="#none" target="_blank">2013년 고등학교 독서토론대회결선대회</a>
+								<div class="box_manage">
+									<span class="name">이승택</span>
+									<span class="date">2018.04.28</span>
+									<button type="button" class="btn_del">삭제</button>
+								</div>
+							</li>
+							<li>
+								<a href="#none" target="_blank">안산시, 정보 공유·협업 활성화를 위한 시민 강의 개최</a>
+								<div class="box_manage">
+									<span class="name">이승택</span>
+									<span class="date">2018.04.28</span>
+									<button type="button" class="btn_del">삭제</button>
+								</div>
+							</li>
+						</ul>
+						<!-- //영상자료 목록 End -->
+						<!-- 영상자료 추가 Start -->
+						<div class="box_append video" id="videoAppendBox" style="display:none">
+							<ul class="list_append">
+								<li>
+									<input type="text" name="" class="inp_video" placeholder="링크제목 입력" />
+									<button type="button" class="btn remove">제거</button>
+								</li>
+							</ul>
+							<button type="button" class="btn add" onclick="javascript:inpAppendFn('video');">추가</button>
+						</div>
+						<!-- //영상자료 추가 End -->
+					</div>
+					<div class="item_intro mb40">
+						<strong class="tit_intro book">관련서적</strong>
+						<button type="button" class="btn_intro" id="ISBNWrite" onclick="javascript:openPopup('ISBNPopup');">추가</button>
+						<!-- 관련서적 목록 Start -->
+						<ul class="list_book">
+							<li>
+								<a href="#none" target="_blank" class="link">
+									<span class="thumb">
+										<img src="../images/book01.jpg" alt="아파도 미안하지 않습니다" />
+										<div class="writer_info">
+											<strong class="box"><em class="name">이승택</em><span class="date">2019.04.12</span></strong>	
+										</div>
+									</span>
+									<strong class="title">아파도 미안하지 않습니다</strong>
+									<span class="author">정유정</span>
+								</a>
+								<button type="button" class="btn_del">삭제</button>
+							</li>
+							<li>
+								<a href="#none" target="_blank" class="link">
+									<span class="thumb">
+										<img src="../images/book02.jpg" alt="진이, 지니" />
+										<div class="writer_info">
+											<strong class="box"><em class="name">이승택</em><span class="date">2019.04.12</span></strong>	
+										</div>
+									</span>
+									<strong class="title">진이, 지니</strong>
+									<span class="author">정유정</span>
+								</a>
+								<button type="button" class="btn_del">삭제</button>
+							</li>
+							<li>
+								<a href="#none" target="_blank" class="link">
+									<span class="thumb">
+										<img src="../images/book03.jpg" alt="너와사는오늘" />
+										<div class="writer_info">
+											<strong class="box"><em class="name">이승택</em><span class="date">2019.04.12</span></strong>	
+										</div>
+									</span>
+									<strong class="title">너와사는오늘</strong>
+									<span class="author">정유정</span>
+								</a>
+								<button type="button" class="btn_del">삭제</button>
+							</li>
+							<li>
+								<a href="#none" target="_blank" class="link">
+									<span class="thumb">
+										<img src="../images/book04.jpg" alt="마지막처럼" />
+										<div class="writer_info">
+											<strong class="box"><em class="name">이승택</em><span class="date">2019.04.12</span></strong>	
+										</div>
+									</span>
+									<strong class="title">마지막처럼</strong>
+									<span class="author">정유정</span>
+								</a>
+								<button type="button" class="btn_del">삭제</button>
+							</li>
+						</ul>
+						<!-- //관련서적 목록 End -->
+					</div>
+					<div class="item_intro club_reply mb0">
+						<strong class="tit_intro reply">활동후기</strong>
+						<!-- 활동후기 작성 Start -->
+						<div class="write_reply">
+							<textarea name="" id=""></textarea>
+							<div class="btn_area ta_r">
+								<button type="button" class="btn submit">등록하기</button>
+							</div>
+						</div>
+						<!-- //활동후기 작성 End -->
+						<!-- 활동후기 목록 Start -->
+						<ul class="list_reply">
+							<li>
+								<p class="comment">이번 강의는 어느때보다 유익하고 보람찬 내용이었던 것 같아요 너무 감사합니다.</p>
+								<div class="info_reply">
+									<span class="name">이승택</span>
+									<span class="date">2018.03.22</span>
+								</div>
+							</li>
+							<li>
+								<p class="comment">내용이 문제인건지 제가 문제인건지 모르겠지만 강의 도중에 좀 졸렸습니다.더보기 펴기를 위한 샘플내용 라인입니다.내용공백을 채우기 위한 타이핑입니다.핑입니다.내용이 문제인건지 제가 문제인건지 모르겠지만 강의 도중에 좀 졸렸습니다.더보기 펴기를 위한 샘플내용 라인입니다.내용공백을 채우기 위한 타이핑입니다.핑입니다.</p>
+								<div class="info_reply">
+									<span class="name">이승택</span>
+									<span class="date">2018.03.22</span>
+									<button type="button" class="btn_del">삭제</button>
+									<button type="button" class="btn_fold">더보기</button>
+								</div>
+							</li>
+							<li>
+								<p class="comment">이번 강의는 어느때보다 유익하고 보람찬 내용이었던 것 같아요 너무 감사합니다.</p>
+								<div class="info_reply">
+									<span class="name">이승택</span>
+									<span class="date">2018.03.22</span>
+								</div>
+							</li>
+							<li>
+								<p class="comment">강의 내용 중 ‘가치‘ 부분이 이해되지 않았습니다. 다음에 이에 대한 부분은 보완해주세요. 강의 내용 중 ‘가치‘ 부분이 이해되지 않았습니다. 다음에 이에 대한 부분은 보완해주세요.</p>
+								<div class="info_reply">
+									<span class="name">이승택</span>
+									<span class="date">2018.03.22</span>
+									<button type="button" class="btn_del">삭제</button>
+									<button type="button" class="btn_fold">더보기</button>
+								</div>
+							</li>
+							<li>
+								<p class="comment">이번 강의는 어느때보다 유익하고 보람찬 내용이었던 것 같아요 너무 감사합니다.</p>
+								<div class="info_reply">
+									<span class="name">이승택</span>
+									<span class="date">2018.03.22</span>
+								</div>
+							</li>
+						</ul>
+						<!-- //활동후기 목록 End -->
+						<div class="paging">
+							<a href="#none" class="first">맨처음</a>
+							<a href="#none" class="prev">이전</a>
+							<a href="#none" class="page on">1</a>
+							<a href="#none" class="page">2</a>
+							<a href="#none" class="page">3</a>
+							<a href="#none" class="page">4</a>
+							<a href="#none" class="page">5</a>
+							<a href="#none" class="next">다음</a>
+							<a href="#none" class="last">마지막</a>
+						</div>
+					</div>
+					<!-- //[활동 상세보기 : End] -->
+
+				</article>
+				<article class="tab_cont board">
+					<h3 class="screen_out">게시판</h3>
+				</article>
+				<article class="tab_cont schedule">
+					<h3 class="screen_out">일정</h3>
+				</article>
+				<article class="tab_cont member">
+					<h3 class="screen_out">회원목록</h3>
+				</article>
+				<article class="tab_cont setting">
+					<h3 class="screen_out">설정</h3>
+				</article>
+			</div>
+		</div>
+	</section>
+	<!-- [footer] -->
+	<footer class="footer_discuss">
+		<div class="inner">
+			<span class="logo"><img src="../images/logo_footer.png" alt="School Books 하단 로고" /></span>
+			<strong class="company">주식회사 이씨오</strong>
+			<address class="addr">
+				대표자: 이사영 / 사업자등록번호: 211-86-14883<br>
+				서울특별시 성동구 광나루6길 우림e-Biz센터 3층(성수2가 3동 280-21)<br>
+				Tel. 02-2024-9900 / Fax. 02-2024-9800 / E-mail. sales@eco.co.kr
+			</address>
+			<p class="copy">COPYRIGHT &copy; 2019 ECO, Inc. ALL RIGHTS RESERVED.</p>
+			<ul class="ft_menu">
+				<li><a href="#none">이용약관</a></li>
+				<li><a href="#none">개인정보취급방침</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- //[footer] -->
+
+	<!-- [팝업]참여인원 설정 Start -->
+	<div class="pop_comm pop_attend" id="AttendPopup">
+		<div class="wrap_pop">
+			<div class="head_pop">
+				<strong class="title">참여인원 설정</strong>
+				<button type="button" class="btn_close" onclick="javascript:closePopup('AttendPopup');">팝업닫기</button>
+			</div>
+			<div class="body_pop">
+				<div class="box_attend">
+					<div class="left">
+						<strong class="title_attend">동아리 명단</strong>
+						<div class="list_attend" id="clubList">
+							<div class="item_attend">
+								<input type="checkbox" name="" class="chk_attend" id="attend1" />
+								<label for="attend1">
+									<span for="attend1" class="name">홍길동(멤버)</span>
+									<span class="icon_attend"></span>
+								</label>
+							</div>
+
+							<div class="item_attend">
+								<input type="checkbox" name="" class="chk_attend" id="attend2" />
+								<label for="attend2">
+									<span for="attend1" class="name">강보희(멤버)</span>
+									<span class="icon_attend"></span>
+								</label>
+							</div>
+
+							<div class="item_attend">
+								<input type="checkbox" name="" class="chk_attend" id="attend3" />
+								<label for="attend3">
+									<span for="attend1" class="name">우진주(멤버)</span>
+									<span class="icon_attend"></span>
+								</label>
+							</div>
+
+							<div class="item_attend">
+								<input type="checkbox" name="" class="chk_attend" id="attend4" />
+								<label for="attend4">
+									<span for="attend1" class="name">조단희(멤버)</span>
+									<span class="icon_attend"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<strong class="title_attend">참석자 명단</strong>
+						<div class="list_attend" id="attendList">
+						</div>
+					</div>
+				</div>
+				<div class="btn_area ta_c">
+					<a href="#none" class="btn confirm" onclick="javascript:closePopup('AttendPopup');">저장</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //[팝업]참여인원 설정 End -->
+
+	<!-- [팝업]관련서적(ISBN)등록 Start -->
+	<div class="pop_comm pop_ISBN" id="ISBNPopup">
+		<div class="wrap_pop">
+			<div class="head_pop">
+				<strong class="title">활용도서 등록</strong>
+				<button type="button" class="btn_close" onclick="javascript:closePopup('ISBNPopup');">팝업닫기</button>
+			</div>
+			<div class="body_pop">
+				<div class="explan_ISBN">
+					<strong class="title">ISBN</strong>
+					<button type="button" class="questionmark">?</button>
+					<dl class="define_ISBN">
+						<dt>ISBN이란?</dt>
+						<dd>
+							국제표준도서번호(International Standard Book Number)의 
+							약어로, 출판된 모든 도서에 부여된 고유번호를 의미합니다. 
+							ISBN등록으로 한 활동에 같은 도서가 여러 번 중복등록되는것을 
+							방지할 수 있습니다.
+						</dd>
+						<dd>
+							네이버북스와 같은 인터넷 서점에서도 도서의 저자명, 출판사명
+							등과 함께 기재되어있어 쉽게 확인이 가능합니다.
+							<span class="example_ISBN"><img src="../images/ISBN_example.jpg" alt="ISBN 네이버 예시화면" /></span>
+						</dd>	
+					</dl>
+				</div>
+				<div class="box_ISBN">
+					<div class="box_append book">
+						<ul class="list_append">
+							<li>
+								<input type="text" name="" class="inp_book" placeholder="ISBN 입력" />
+								<button type="button" class="btn remove">제거</button>
+							</li>
+							<li>
+								<input type="text" name="" class="inp_book" placeholder="ISBN 입력" />
+								<button type="button" class="btn remove">제거</button>
+							</li>
+						</ul>
+						<button type="button" class="btn add" onclick="javascript:inpAppendFn('book');">추가</button>
+					</div>
+				</div>
+				<div class="btn_area ta_c">
+					<a href="#none" class="btn confirm">제출</a>
+					<a href="javascript:closePopup('ISBNPopup');" class="btn cancel">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //[팝업]관련서적(ISBN)등록 End -->
+</div>
+</body>
+</html>
